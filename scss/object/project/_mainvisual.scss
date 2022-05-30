@@ -1,0 +1,16 @@
+@use "./../../foundation/mixin" as *;
+
+.p-mainvisual__image {
+  position: relative;
+  &img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    // height: min(50vh, 285px);
+    vertical-align: bottom;
+    @include breakpoint(pc) {
+      width: 100vw;
+      height: 530px;
+    }
+  }
+}

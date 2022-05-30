@@ -1,0 +1,11 @@
+@use "./../foundation/mixin" as *;
+@use "./../foundation/variable" as *;
+
+.l-sidebar {
+  display: none;
+  background-color: $color-sidebar;
+
+  @include breakpoint(pc) {
+    display: block;
+  }
+}

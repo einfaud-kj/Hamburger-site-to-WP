@@ -1,0 +1,24 @@
+@use "./../../foundation/variable" as *;
+@use "./../../foundation/mixin" as *;
+
+.c-text {
+  //   &__map,
+  &__shopinfo,
+  &__history,
+  &__copy {
+    color: $color-white;
+    font-size: 2rem;
+  }
+  &__history {
+    padding-left: 20px;
+    border-left: 2px solid white;
+  }
+  &__copy {
+    text-align: center;
+    padding: 0px 20px 20px;
+  }
+  &__map {
+    color: $color-white;
+    padding: 30px;
+  }
+}

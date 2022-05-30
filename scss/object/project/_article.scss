@@ -1,0 +1,6 @@
+@use "./../../foundation/variable" as *;
+@use "./../../foundation/mixin" as *;
+
+.p-article {
+  background-color: $color-main;
+}

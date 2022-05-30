@@ -1,0 +1,53 @@
+@use "./../../foundation/mixin" as *;
+@use "./../../foundation/variable" as *;
+
+.c-title {
+  &__sitetitle,
+  &__takeout,
+  &__eatin,
+  &__map {
+    color: $color-white;
+  }
+  &__sitetitle {
+    font-size: 36px;
+    position: absolute;
+    top: 43%;
+    left: 5%;
+    line-height: 1;
+    @include breakpoint(pc) {
+      font-size: 40px;
+    }
+  }
+  &__takeout,
+  &__eatin {
+    font-size: 41px;
+    padding-left: 15px;
+    margin-bottom: 280px;
+    &::after {
+      content: "";
+      display: inline-block;
+      height: 4px;
+      background-color: white;
+      position: absolute;
+      top: 70px;
+      left: 15px;
+      width: 34px;
+    }
+    &--sub {
+      font-size: 22px;
+    }
+  }
+  &__map {
+    padding: 30px;
+    &::after {
+      content: "";
+      display: inline-block;
+      height: 4px;
+      background-color: white;
+      position: absolute;
+      top: 90px;
+      left: 30px;
+      width: 60px;
+    }
+  }
+}

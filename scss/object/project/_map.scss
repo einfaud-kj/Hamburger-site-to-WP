@@ -1,0 +1,15 @@
+@use "./../../foundation/variable" as *;
+@use "./../../foundation/mixin" as *;
+
+.p-map {
+  position: relative;
+  background-color: black;
+  display: flex;
+
+  &__container {
+    width: 100%;
+    @include breakpoint(search) {
+      width: 50%;
+    }
+  }
+}
