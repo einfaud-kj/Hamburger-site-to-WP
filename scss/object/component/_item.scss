@@ -13,7 +13,7 @@
     opacity: 0.8;
   }
   &__ul {
-    @include breakpoint(search) {
+    @include breakpoint(tablet) {
       display: flex;
       gap: 20px;
     }

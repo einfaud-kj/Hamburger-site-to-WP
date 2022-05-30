@@ -18,7 +18,16 @@
     padding: 0px 20px 20px;
   }
   &__map {
+    font-size: 1.4rem;
     color: $color-white;
     padding: 30px;
+    position: relative;
+    z-index: 3;
+    @include breakpoint(pc) {
+      width: 60%;
+      padding: 120px;
+      line-height: 2;
+      font-size: 1.6rem;
+    }
   }
 }
