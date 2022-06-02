@@ -6,7 +6,7 @@
   background-color: black;
 
   @include breakpoint(pc) {
-    min-height: 650px;
+    height: 31%;
   }
   &::before {
     background: rgba(0, 0, 0, 0.3);

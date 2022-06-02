@@ -1,0 +1,10 @@
+@use "./../../foundation/mixin" as m;
+
+.u-margin {
+  &__takeout {
+    margin-bottom: 22px;
+    @include m.breakpoint(tablet) {
+      margin-bottom: 0;
+    }
+  }
+}

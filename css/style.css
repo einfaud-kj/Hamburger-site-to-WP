@@ -25,8 +25,8 @@ body {
 img,
 video,
 object {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 100%;
   border: none;
   display: block;
   -o-object-fit: cover;
@@ -104,7 +104,7 @@ $background-header: #fff7ef;
 @media (min-width: 1200px) {
   .l-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 19.1%;
+    grid-template-columns: 1fr 19.1%;
     grid-template-rows: 217px 1fr 150px;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
@@ -113,28 +113,28 @@ $background-header: #fff7ef;
 
 @media (min-width: 1200px) {
   .l-grid-header {
-    grid-column: 1/span 2;
+    grid-column: 1/2;
     grid-row: 1;
   }
 }
 
 @media (min-width: 1200px) {
   .l-grid-main {
-    grid-column: 1/span 2;
+    grid-column: 1/2;
     grid-row: 2;
   }
 }
 
 @media (min-width: 1200px) {
   .l-grid-sidebar {
-    grid-column: 3;
+    grid-column: 2;
     grid-row: 1/3;
   }
 }
 
 @media (min-width: 1200px) {
   .l-grid-footer {
-    grid-column: 1/span 3;
+    grid-column: 1/3;
     grid-row: 3;
   }
 }
@@ -142,6 +142,20 @@ $background-header: #fff7ef;
 .c-inner {
   margin: 0 auto;
   padding: 10px 20px;
+}
+.c-inner__article {
+  padding: 5.1% 5.1% 13.1%;
+}
+@media (min-width: 600px) {
+  .c-inner__article {
+    padding: 4.8%;
+  }
+}
+@media (min-width: 1200px) {
+  .c-inner__article {
+    height: 69%;
+    padding: 7.73% 7.2% 8.44%;
+  }
 }
 
 .c-button__menu {
@@ -221,6 +235,30 @@ $background-header: #fff7ef;
 
 .c-item__takeout, .c-item__eatin {
   position: relative;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (min-width: 600px) {
+  .c-item__takeout, .c-item__eatin {
+    height: 89.5%;
+  }
+}
+@media (min-width: 1200px) {
+  .c-item__takeout, .c-item__eatin {
+    height: 100%;
+  }
+}
+.c-item__takeout {
+  background-image: url(./../../../img/Takeout.png);
+}
+.c-item__eatin {
+  background-image: url(./../../../img/Eatin.png);
 }
 .c-item__dl {
   background-color: #ffffff;
@@ -231,32 +269,14 @@ $background-header: #fff7ef;
 @media (min-width: 600px) {
   .c-item__ul {
     display: flex;
-    gap: 20px;
+    gap: 4.8%;
+    height: 100%;
   }
 }
-.c-item__takeout {
-  background-image: url(./../../../img/Takeout.png);
-  width: 100%;
-  height: auto;
-  background-size: cover;
-  -o-object-fit: cover;
-     object-fit: cover;
-  margin-bottom: 22px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.c-item__eatin {
-  background-image: url(./../../../img/Eatin.png);
-  width: 100%;
-  height: auto;
-  background-size: cover;
-  -o-object-fit: cover;
-     object-fit: cover;
-  margin-bottom: 22px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+@media (min-width: 1200px) {
+  .c-item__ul {
+    gap: 5.2%;
+  }
 }
 
 .c-item__info {
@@ -354,22 +374,12 @@ $background-header: #fff7ef;
 
 .p-mainvisual__image {
   position: relative;
-}
-.p-mainvisual__imageimg {
-  max-width: 100%;
-  width: 100%;
-  height: auto;
-  vertical-align: bottom;
-}
-@media (min-width: 1200px) {
-  .p-mainvisual__imageimg {
-    width: 100vw;
-    height: 530px;
-  }
+  height: 20.2%;
 }
 
 .p-article {
   background-color: #fffdfa;
+  height: 79.8%;
 }
 
 .p-map {
@@ -378,7 +388,7 @@ $background-header: #fff7ef;
 }
 @media (min-width: 1200px) {
   .p-map {
-    min-height: 650px;
+    height: 31%;
   }
 }
 .p-map::before {
@@ -400,6 +410,19 @@ $background-header: #fff7ef;
 @media (min-width: 1200px) {
   .p-map::before {
     display: none;
+  }
+}
+
+.p-mainmenu {
+  height: 100%;
+}
+
+.u-margin__takeout {
+  margin-bottom: 22px;
+}
+@media (min-width: 600px) {
+  .u-margin__takeout {
+    margin-bottom: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

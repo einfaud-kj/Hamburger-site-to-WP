@@ -5,6 +5,26 @@
   &__takeout,
   &__eatin {
     position: relative;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include breakpoint(tablet) {
+      height: 89.5%;
+    }
+    @include breakpoint(pc) {
+      height: 100%;
+    }
+  }
+  &__takeout {
+    background-image: url(./../../../img/Takeout.png);
+  }
+
+  &__eatin {
+    background-image: url(./../../../img/Eatin.png);
   }
   &__dl {
     background-color: #ffffff;
@@ -15,31 +35,12 @@
   &__ul {
     @include breakpoint(tablet) {
       display: flex;
-      gap: 20px;
+      gap: 4.8%;
+      height: 100%;
     }
-  }
-  &__takeout {
-    background-image: url(./../../../img/Takeout.png);
-    width: 100%;
-    height: auto;
-    background-size: cover;
-    object-fit: cover;
-    margin-bottom: 22px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  &__eatin {
-    background-image: url(./../../../img/Eatin.png);
-    width: 100%;
-    height: auto;
-    background-size: cover;
-    object-fit: cover;
-    margin-bottom: 22px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    @include breakpoint(pc) {
+      gap: 5.2%;
+    }
   }
 }
 
