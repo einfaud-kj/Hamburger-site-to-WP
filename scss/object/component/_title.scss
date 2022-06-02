@@ -61,4 +61,11 @@
       }
     }
   }
+  &__sidebar {
+    @include breakpoint(pc) {
+      padding: 82px 0 85px 12.5%;
+      color: $color-sidetext;
+      font-size: 3.4rem;
+    }
+  }
 }

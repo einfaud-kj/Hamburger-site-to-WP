@@ -1,0 +1,25 @@
+@use "./../../foundation/variable" as *;
+@use "./../../foundation/mixin" as *;
+
+.c-menu {
+  &__main {
+    @include breakpoint(pc) {
+      padding: 0 0 40px 12.5%;
+      color: $color-sidetext;
+      font-size: 2.4rem;
+    }
+  }
+  &__sub {
+    @include breakpoint(pc) {
+      padding-left: 17.9%;
+      font-size: 2rem;
+      color: $color-sidetext;
+      & > li {
+        padding-bottom: 22px;
+        &:last-child {
+          padding-bottom: 49px;
+        }
+      }
+    }
+  }
+}

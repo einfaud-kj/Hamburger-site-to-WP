@@ -4,6 +4,9 @@
 .p-map {
   position: relative;
   background-color: black;
+  @include breakpoint(pc) {
+    min-height: 649px;
+  }
 
   &::before {
     background: rgba(0, 0, 0, 0.3);
