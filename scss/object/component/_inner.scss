@@ -3,6 +3,7 @@
 .c-inner {
   margin: 0 auto;
   padding: 10px 20px;
+  text-align: right;
   &__article {
     padding: 5.1% 5.1% 13.1%;
     @include breakpoint(tablet) {

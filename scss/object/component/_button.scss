@@ -1,13 +1,15 @@
 @use "./../../foundation/mixin" as *;
 @use "./../../foundation/variable" as *;
 
-.c-button__menu {
-  display: block;
-  font-size: min(5.07vw, 34px);
-  font-weight: bold;
-  text-align: right;
-  color: $color-sidetext;
-  @include breakpoint(pc) {
-    display: none;
+.c-button {
+  &__menu {
+    display: block;
+    font-size: min(5.07vw, 34px);
+    font-weight: bold;
+
+    color: $color-sidetext;
+    @include breakpoint(pc) {
+      display: none;
+    }
   }
 }

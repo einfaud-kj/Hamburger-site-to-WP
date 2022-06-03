@@ -4,6 +4,14 @@
 .l-sidebar {
   display: none;
   background-color: $color-sidebar;
+  z-index: 5;
+  // position: absolute;
+  // top: 0;
+  // right: -500px;
+  // transition: all 0.3s;
+  &.is-open {
+    display: block;
+  }
 
   @include breakpoint(pc) {
     display: block;
