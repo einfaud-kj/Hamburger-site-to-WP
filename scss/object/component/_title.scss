@@ -62,26 +62,9 @@
     }
   }
   &__sidebar {
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      top: 32px;
-      right: 32px;
-      width: 5px; /* 棒の幅（太さ） */
-      height: 30px; /* 棒の高さ */
-      background: #333;
-      @include breakpoint(pc) {
-        display: none;
-      }
-    }
-    &::before {
-      transform: translate(-50%, -50%) rotate(45deg);
-    }
-    &::after {
-      transform: translate(-50%, -50%) rotate(-45deg);
-    }
+    display: none;
     @include breakpoint(pc) {
+      display: block;
       padding: 82px 0 85px 12.5%;
       color: $color-sidetext;
       font-size: 3.4rem;

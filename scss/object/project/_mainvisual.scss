@@ -3,6 +3,7 @@
 .p-mainvisual__image {
   position: relative;
   height: 18vh;
+  min-height: 285px;
   @include breakpoint(pc) {
     min-height: 530px;
   }

@@ -1,0 +1,8 @@
+@use "./../../foundation/mixin" as *;
+
+.l-sidebar > ul > li:first-child > h3:first-of-type {
+  padding-top: 212px;
+  @include breakpoint(pc) {
+    padding: 12.5%;
+  }
+}

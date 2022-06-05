@@ -12,4 +12,33 @@
       display: none;
     }
   }
+  &__sidebar {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 19px;
+      right: 14px;
+      width: 6px; /* 棒の幅（太さ） */
+      height: 50px; /* 棒の高さ */
+      background: $color-sidetext;
+      cursor: pointer;
+      @include breakpoint(pc) {
+        display: none;
+      }
+    }
+    &::before {
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+    &::after {
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+  }
 }

@@ -16,7 +16,7 @@ html {
 body {
   color: #333;
   font-size: 1.6rem;
-  font-family: "Roboto", "Noto Sans JP", "M PLUS 1p", sans-serif;
+  font-family: "M PLUS 1p", "Noto Sans JP", sans-serif;
   min-width: 350px;
   width: 100%;
   overflow-x: hidden;
@@ -52,6 +52,13 @@ a:hover img {
 
 li {
   list-style: none;
+}
+
+/*------フォントファミリー　Robot -----*/
+.l-header__logo,
+.c-title__takeout,
+.c-title__eatin {
+  font-family: "Roboto", "Noto Sans JP", sans-serif;
 }
 
 /*  bgカラー　*/
@@ -95,13 +102,58 @@ $background-header: #fff7ef;
   display: none;
   background-color: #f2ede9;
   z-index: 5;
+  -webkit-animation: slidout 0.5s forwards;
+          animation: slidout 0.5s forwards;
+}
+@-webkit-keyframes slidout {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(1200px);
+  }
+}
+@keyframes slidout {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(1200px);
+  }
 }
 .l-sidebar.is-open {
   display: block;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 20%, black 20%, #f2ede9 20%, #f2ede9 20%, #f2ede9 100%);
+  -webkit-animation: slidin 0.5s forwards;
+          animation: slidin 0.5s forwards;
+}
+@-webkit-keyframes slidin {
+  from {
+    transform: translateX(1200px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes slidin {
+  from {
+    transform: translateX(1200px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@media (min-width: 600px) {
+  .l-sidebar.is-open {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 50%, black 50%, #f2ede9 50%, #f2ede9 50%, #f2ede9 100%);
+  }
 }
 @media (min-width: 1200px) {
   .l-sidebar {
     display: block;
+    -webkit-animation: none;
+            animation: none;
+    transform: none;
   }
 }
 
@@ -155,7 +207,7 @@ $background-header: #fff7ef;
 
 .c-inner {
   margin: 0 auto;
-  padding: 10px 20px;
+  padding: 5px 20px 0px;
   text-align: right;
 }
 .c-inner__article {
@@ -184,6 +236,38 @@ $background-header: #fff7ef;
   .c-button__menu {
     display: none;
   }
+}
+.c-button__sidebar {
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+}
+.c-button__sidebar::before, .c-button__sidebar::after {
+  content: "";
+  position: absolute;
+  top: 19px;
+  right: 14px;
+  width: 6px;
+  /* 棒の幅（太さ） */
+  height: 50px;
+  /* 棒の高さ */
+  background: #707070;
+  cursor: pointer;
+}
+@media (min-width: 1200px) {
+  .c-button__sidebar::before, .c-button__sidebar::after {
+    display: none;
+  }
+}
+.c-button__sidebar::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.c-button__sidebar::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 .c-title__sitetitle, .c-title__takeout, .c-title__eatin, .c-title__map {
@@ -247,30 +331,12 @@ $background-header: #fff7ef;
     left: 120px;
   }
 }
-.c-title__sidebar::before, .c-title__sidebar::after {
-  content: "";
-  position: absolute;
-  top: 32px;
-  right: 32px;
-  width: 5px;
-  /* 棒の幅（太さ） */
-  height: 30px;
-  /* 棒の高さ */
-  background: #333;
-}
-@media (min-width: 1200px) {
-  .c-title__sidebar::before, .c-title__sidebar::after {
-    display: none;
-  }
-}
-.c-title__sidebar::before {
-  transform: translate(-50%, -50%) rotate(45deg);
-}
-.c-title__sidebar::after {
-  transform: translate(-50%, -50%) rotate(-45deg);
+.c-title__sidebar {
+  display: none;
 }
 @media (min-width: 1200px) {
   .c-title__sidebar {
+    display: block;
     padding: 82px 0 85px 12.5%;
     color: #707070;
     font-size: 3.4rem;
@@ -383,7 +449,7 @@ $background-header: #fff7ef;
 }
 @media (min-width: 600px) {
   .p-search-form {
-    margin: 30px auto;
+    margin: 15px auto 30px;
   }
 }
 @media (min-width: 1200px) {
@@ -426,6 +492,7 @@ $background-header: #fff7ef;
 .p-mainvisual__image {
   position: relative;
   height: 18vh;
+  min-height: 285px;
 }
 @media (min-width: 1200px) {
   .p-mainvisual__image {
@@ -478,6 +545,28 @@ $background-header: #fff7ef;
 @media (min-width: 600px) {
   .u-margin__takeout {
     margin-bottom: 0;
+  }
+}
+.u-margin__sidebar--open {
+  margin-left: 25%;
+}
+@media (min-width: 600px) {
+  .u-margin__sidebar--open {
+    margin-left: 60%;
+  }
+}
+@media (min-width: 600px) and (min-width: 1200px) {
+  .u-margin__sidebar--open {
+    margin-left: 0;
+  }
+}
+
+.l-sidebar > ul > li:first-child > h3:first-of-type {
+  padding-top: 212px;
+}
+@media (min-width: 1200px) {
+  .l-sidebar > ul > li:first-child > h3:first-of-type {
+    padding: 12.5%;
   }
 }
 /*# sourceMappingURL=style.css.map */

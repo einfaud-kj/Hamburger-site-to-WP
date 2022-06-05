@@ -1,10 +1,19 @@
-@use "./../../foundation/mixin" as m;
+@use "./../../foundation/mixin" as *;
 
 .u-margin {
   &__takeout {
     margin-bottom: 22px;
-    @include m.breakpoint(tablet) {
+    @include breakpoint(tablet) {
       margin-bottom: 0;
+    }
+  }
+  &__sidebar--open {
+    margin-left: 25%;
+    @include breakpoint(tablet) {
+      margin-left: 60%;
+      @include breakpoint(pc) {
+        margin-left: 0;
+      }
     }
   }
 }
