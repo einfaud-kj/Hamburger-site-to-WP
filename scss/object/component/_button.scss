@@ -18,8 +18,11 @@
     height: 40px;
     position: absolute;
     top: 30px;
-    right: 30px;
+    right: 10%;
     cursor: pointer;
+    @include breakpoint(tablet) {
+      right: 7%;
+    }
     &::before,
     &::after {
       content: "";

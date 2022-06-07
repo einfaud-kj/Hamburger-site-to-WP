@@ -1,23 +1,21 @@
 jQuery(function ($) {
   $(window).resize(function () {
     if (window.matchMedia("(min-width: 1200px)").matches) {
-      $(".js-button").removeClass("is-open");
-      $(".l-sidebar").removeClass("is-open");
-      // $(".l-sidebar").css("display", "block");
+      $(".js-button__sidebar").removeClass("is-open");
+      $(".p-sidebar").removeClass("is-open");
+      $(".l-sidebar__overlay").removeClass("is-open");
+      $("body").css("overflow-y", "");
     }
   });
-  // $(window).resize(function () {
-  //   if (window.matchMedia("(max-width: 1200px)").matches) {
-  //     $(".l-sidebar").css("display", "none");
-  //   }
-  // });
+
   $(".js-button").on("click", function () {
-    $(".js-button__sidebar").toggleClass("is-open");
-    $(".l-sidebar").toggleClass("is-open");
-    // $(".l-sidebar").css("display", "block");
+    $(".p-sidebar").toggleClass("is-open");
+    $(".l-sidebar__overlay").toggleClass("is-open");
+    $("body").css("overflow-y", "hidden");
   });
   $(".js-button__sidebar").on("click", function () {
-    $(this).removeClass("is-open");
-    $(".l-sidebar").removeClass("is-open");
+    $(".p-sidebar").removeClass("is-open");
+    $(".l-sidebar__overlay").removeClass("is-open");
+    $("body").css("overflow-y", "");
   });
 });

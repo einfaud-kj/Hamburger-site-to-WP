@@ -15,7 +15,7 @@
 @use "./layout/footer";
 @use "./layout/header";
 @use "./layout/main";
-@use "./layout/sidebar";
+@use "./layout/side";
 @use "./layout/grid";
 
 // ==========================================================================
@@ -41,6 +41,7 @@
 @use "./object/project/article";
 @use "./object/project/map";
 @use "./object/project/mainmenu";
+@use "./object/project/sidebar";
 
 // // -----------------------------------------------------------------
 // // Utility

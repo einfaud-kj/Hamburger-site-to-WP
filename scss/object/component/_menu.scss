@@ -6,11 +6,20 @@
     padding: 0 0 40px 12.5%;
     color: $color-sidetext;
     font-size: 2.4rem;
+    // @include breakpoint(tablet){
+    //   padding-left: 4.5%;
+    // }
+    // @include breakpoint(pc) {
+    //   padding-left: 12.5%;
+    // }
   }
   &__sub {
     padding-left: 17.9%;
     font-size: 2rem;
     color: $color-sidetext;
+    // @include breakpoint(pc) {
+    //   padding-left: 17.9%;
+    // }
     & > li {
       padding-bottom: 22px;
       &:last-child {
