@@ -30,8 +30,6 @@ object {
   height: 100%;
   border: none;
   display: block;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 a {
