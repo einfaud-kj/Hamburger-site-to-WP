@@ -26,6 +26,7 @@
     z-index: 3;
     @include breakpoint(pc) {
       width: 60%;
+      min-height: 471.4px;
       padding: 120px;
       line-height: 2;
       font-size: 1.6rem;

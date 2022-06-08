@@ -30,6 +30,8 @@ object {
   height: 100%;
   border: none;
   display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 a {
@@ -348,8 +350,8 @@ $background-header: #fff7ef;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  -o-object-position: 86.5%;
+     object-position: 86.5%;
 }
 
 .c-text__shopinfo, .c-text__history, .c-text__copy {
@@ -375,6 +377,7 @@ $background-header: #fff7ef;
 @media (min-width: 1200px) {
   .c-text__map {
     width: 60%;
+    min-height: 471.4px;
     padding: 120px;
     line-height: 2;
     font-size: 1.6rem;
