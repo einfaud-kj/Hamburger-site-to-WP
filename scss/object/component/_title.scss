@@ -9,13 +9,41 @@
     color: $color-white;
   }
   &__sitetitle {
-    font-size: 36px;
+    font-size: 3.6rem;
     position: absolute;
     top: 43%;
     left: 5%;
     line-height: 1;
     @include breakpoint(pc) {
-      font-size: 40px;
+      font-size: 4rem;
+    }
+    &--archive {
+      font-size: 3.6rem;
+      position: absolute;
+      top: 43%;
+      left: 5%;
+      line-height: 1;
+      color: $color-white;
+      @include breakpoint(tablet) {
+        font-size: 6rem;
+      }
+      &-sub {
+        font-size: 1.6rem;
+        font-weight: bold;
+        position: absolute;
+        top: 60%;
+        left: 5%;
+        line-height: 1;
+        color: $color-white;
+        @include breakpoint(tablet) {
+          top: 52%;
+          left: 40%;
+        }
+        @include breakpoint(pc) {
+          top: 54%;
+          left: 26%;
+        }
+      }
     }
   }
   &__takeout,
@@ -71,6 +99,14 @@
       padding: 82px 0 85px 12.5%;
       color: $color-sidetext;
       font-size: 3.4rem;
+    }
+  }
+  &__subheading {
+    font-size: 28px;
+    padding-bottom: 30px;
+    @include breakpoint(tablet) {
+      font-size: 36px;
+      padding-bottom: 25px;
     }
   }
 }

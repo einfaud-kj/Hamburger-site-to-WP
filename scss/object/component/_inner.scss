@@ -15,4 +15,13 @@
       padding: 7.73% 7.2% 8.44%;
     }
   }
+  &__archive {
+    padding: 30px 19px 31px 22px;
+    @include breakpoint(tablet) {
+      padding: 36px 35px 30px 43px;
+    }
+    @include breakpoint(pc) {
+      padding: 60px 100px 64px;
+    }
+  }
 }
