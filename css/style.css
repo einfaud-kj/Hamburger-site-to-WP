@@ -280,14 +280,36 @@ $background-header: #fff7ef;
 }
 @media (min-width: 600px) {
   .c-title__sitetitle--archive-sub {
-    top: 150px;
-    left: 225px;
+    top: 143px;
+    left: 243px;
   }
 }
-@media (min-width: 1200px) {
-  .c-title__sitetitle--archive-sub {
+.c-title__sitetitle--archive {
+  font-size: 3.6rem;
+  position: absolute;
+  top: 115px;
+  left: 38px;
+  line-height: 1;
+  color: #ffffff;
+}
+@media (min-width: 600px) {
+  .c-title__sitetitle--archive {
+    font-size: 6rem;
+  }
+}
+.c-title__sitetitle--archive-search-sub {
+  font-size: 1.6rem;
+  font-weight: bold;
+  position: absolute;
+  top: 166px;
+  left: 38px;
+  line-height: 1;
+  color: #ffffff;
+}
+@media (min-width: 600px) {
+  .c-title__sitetitle--archive-search-sub {
     top: 143px;
-    left: 250px;
+    left: 275px;
   }
 }
 .c-title__takeout, .c-title__eatin {

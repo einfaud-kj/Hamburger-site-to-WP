@@ -37,12 +37,32 @@
         line-height: 1;
         color: $color-white;
         @include breakpoint(tablet) {
-          top: 150px;
-          left: 225px;
-        }
-        @include breakpoint(pc) {
           top: 143px;
-          left: 250px;
+          left: 243px;
+        }
+      }
+    }
+    &--archive {
+      font-size: 3.6rem;
+      position: absolute;
+      top: 115px;
+      left: 38px;
+      line-height: 1;
+      color: $color-white;
+      @include breakpoint(tablet) {
+        font-size: 6rem;
+      }
+      &-search-sub {
+        font-size: 1.6rem;
+        font-weight: bold;
+        position: absolute;
+        top: 166px;
+        left: 38px;
+        line-height: 1;
+        color: $color-white;
+        @include breakpoint(tablet) {
+          top: 143px;
+          left: 275px;
         }
       }
     }
