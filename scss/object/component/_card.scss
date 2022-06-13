@@ -31,16 +31,13 @@
     }
   }
   &__article {
-    padding-left: 17px;
     padding-bottom: 43.7px;
     background-color: $color-article;
 
     @include breakpoint(tablet) {
-      padding-left: 34.7px;
       padding-bottom: 0;
     }
     @include breakpoint(pc) {
-      padding-left: 63px;
       padding-bottom: 0;
     }
   }
@@ -51,6 +48,13 @@
   &__title-sub,
   &__text {
     color: $color-text;
+    padding-left: 17px;
+    @include breakpoint(tablet) {
+      padding-left: 34.7px;
+    }
+    @include breakpoint(pc) {
+      padding-left: 63px;
+    }
   }
   &__title {
     font-size: 2rem;
@@ -80,7 +84,7 @@
     }
     @include breakpoint(pc) {
       padding-top: 17px;
-      padding-left: 104px;
+      padding-left: 63px;
     }
   }
   &__button {
@@ -91,12 +95,12 @@
     height: 42px;
     background-color: $color-btn;
     border: solid 1px #707070;
-    border-radius: 20px;
+    border-radius: 40px;
     @include breakpoint(tablet) {
-      margin: 45px auto 40px;
+      margin: 15% auto;
     }
     @include breakpoint(pc) {
-      margin: 60 auto;
+      margin: 60px auto;
       width: 292px;
       height: 76px;
     }

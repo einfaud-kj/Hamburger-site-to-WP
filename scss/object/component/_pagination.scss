@@ -1,0 +1,53 @@
+@use "./../../foundation/variable" as *;
+@use "./../../foundation/mixin" as *;
+
+.c-pagination {
+  color: $color-btntext;
+  font-family: "Roboto";
+  font-weight: bold;
+  &__sp > a,
+  & ul > li > a {
+    color: $color-btntext;
+  }
+  &__sp {
+    display: flex;
+    justify-content: space-between;
+
+    @include breakpoint(tablet) {
+      display: none;
+    }
+  }
+  &__tablet {
+    display: none;
+    @include breakpoint(tablet) {
+      display: block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    & > li:nth-child(2) {
+      background-color: #3c2b1c;
+      & > a {
+        color: white;
+      }
+    }
+  }
+
+  &__next {
+    padding-left: 2.5vw;
+  }
+  &__number {
+    border: solid;
+    margin-left: 2vw;
+    width: 4.8vw;
+    height: 6.5vh;
+    text-align: center;
+    line-height: 2;
+    max-width: 35px;
+    max-height: 35px;
+  }
+}
