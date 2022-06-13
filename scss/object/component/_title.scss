@@ -148,3 +148,24 @@
     }
   }
 }
+
+/* 　singleページ  */
+
+.c-title {
+  &__h3 {
+    font-size: 24px;
+    padding-top: 34px;
+  }
+  &__h4 {
+    font-size: 20px;
+    padding-top: 30px;
+  }
+  &__h5 {
+    font-size: 20px;
+    padding-top: 36px;
+  }
+  &__h6 {
+    font-size: 20px;
+    padding-top: 29px;
+  }
+}

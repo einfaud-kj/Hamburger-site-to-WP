@@ -24,4 +24,13 @@
       padding: 60px 100px 64px;
     }
   }
+  &__single {
+    padding: 30px 20px 0;
+    @include breakpoint(tablet) {
+      padding: 60px 60px 0;
+    }
+    @include breakpoint(pc) {
+      padding: 60px 100px 0;
+    }
+  }
 }

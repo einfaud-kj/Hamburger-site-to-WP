@@ -190,6 +190,19 @@ $background-header: #fff7ef;
     padding: 60px 100px 64px;
   }
 }
+.c-inner__single {
+  padding: 30px 20px 0;
+}
+@media (min-width: 600px) {
+  .c-inner__single {
+    padding: 60px 60px 0;
+  }
+}
+@media (min-width: 1200px) {
+  .c-inner__single {
+    padding: 60px 100px 0;
+  }
+}
 
 .c-button__menu {
   display: block;
@@ -403,6 +416,24 @@ $background-header: #fff7ef;
   }
 }
 
+/* 　singleページ  */
+.c-title__h3 {
+  font-size: 24px;
+  padding-top: 34px;
+}
+.c-title__h4 {
+  font-size: 20px;
+  padding-top: 30px;
+}
+.c-title__h5 {
+  font-size: 20px;
+  padding-top: 36px;
+}
+.c-title__h6 {
+  font-size: 20px;
+  padding-top: 29px;
+}
+
 .c-item__takeout, .c-item__eatin {
   position: relative;
   width: 100%;
@@ -452,6 +483,20 @@ $background-header: #fff7ef;
   left: 0;
   -o-object-position: 86.5%;
      object-position: 86.5%;
+}
+
+/* singlepage */
+.c-item__lead {
+  background-color: #f5f5f5;
+  margin: 30px 0;
+  padding: 30px 16px 30px 20px;
+}
+.c-item__lead > p > a {
+  text-decoration: underline;
+  color: #4a6c9b;
+}
+.c-item__lead > p:first-of-type {
+  padding-bottom: 30px;
 }
 
 .c-text__shopinfo, .c-text__history, .c-text__copy {
@@ -776,6 +821,7 @@ $background-header: #fff7ef;
 
 .p-article {
   background-color: #fffdfa;
+  color: #3c2a10;
 }
 
 .p-map {
