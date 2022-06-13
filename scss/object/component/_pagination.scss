@@ -38,16 +38,19 @@
   }
 
   &__next {
-    padding-left: 2.5vw;
+    padding-left: 18px;
   }
   &__number {
     border: solid;
-    margin-left: 2vw;
+    margin-left: 1.8vw;
     width: 4.8vw;
     height: 6.5vh;
     text-align: center;
     line-height: 2;
     max-width: 35px;
     max-height: 35px;
+    @include breakpoint(pc) {
+      margin-left: 15px;
+    }
   }
 }
