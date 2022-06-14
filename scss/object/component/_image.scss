@@ -1,0 +1,37 @@
+@use "./../../foundation/variable" as *;
+@use "./../../foundation/mixin" as *;
+
+.c-image {
+  &__common > img {
+    min-height: 124px;
+    @include breakpoint(tablet) {
+      min-height: 264px;
+    }
+    @include breakpoint(pc) {
+      min-height: 500px;
+    }
+  }
+  &__main > img {
+    margin: 0 auto 30px;
+    min-height: 166px;
+    width: 71vw;
+    @include breakpoint(tablet) {
+      margin: 0 auto 240px;
+      min-height: 358px;
+    }
+    @include breakpoint(pc) {
+      margin: 0 auto 60px;
+      width: 30vw;
+      min-width: 581px;
+    }
+  }
+  &__sub {
+    margin-bottom: 20px;
+    @include breakpoint(tablet) {
+      margin-bottom: 0;
+    }
+    & > img {
+      min-height: 205px;
+    }
+  }
+}

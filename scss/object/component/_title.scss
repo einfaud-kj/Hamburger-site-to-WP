@@ -155,17 +155,30 @@
   &__h3 {
     font-size: 24px;
     padding-top: 34px;
+    @include breakpoint(tablet) {
+      font-size: 28px;
+      padding-top: 60px;
+    }
   }
   &__h4 {
     font-size: 20px;
     padding-top: 30px;
+    @include breakpoint(tablet) {
+      padding-top: 60px;
+    }
   }
   &__h5 {
     font-size: 20px;
     padding-top: 36px;
+    @include breakpoint(tablet) {
+      padding-top: 75px;
+    }
   }
   &__h6 {
     font-size: 20px;
     padding-top: 29px;
+    @include breakpoint(tablet) {
+      padding-top: 60px;
+    }
   }
 }
