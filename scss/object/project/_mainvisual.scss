@@ -27,4 +27,12 @@
       min-height: 500px;
     }
   }
+  &--page {
+    position: relative;
+    height: 16vh;
+    min-height: 225px;
+    @include breakpoint(tablet) {
+      min-height: 500px;
+    }
+  }
 }

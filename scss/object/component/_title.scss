@@ -82,6 +82,22 @@
         left: 80px;
       }
     }
+    &--page {
+      font-size: 3.6rem;
+      position: absolute;
+      top: 100px;
+      left: 40px;
+      line-height: 1;
+      color: $color-white;
+      @include breakpoint(tablet) {
+        top: 210px;
+        left: 60px;
+        font-size: 6rem;
+      }
+      @include breakpoint(pc) {
+        left: 80px;
+      }
+    }
   }
 
   &__takeout,
