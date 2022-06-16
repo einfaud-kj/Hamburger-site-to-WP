@@ -72,7 +72,7 @@ $background-header: #fff7ef;
 何に使用する色かをわかりやすくするために
 */
 .l-footer {
-  background-image: url(./../../img/レイヤー\ 1.png);
+  background-image: url(./../../img/footer-bg.png);
   background-size: cover;
 }
 
@@ -524,10 +524,10 @@ $background-header: #fff7ef;
   justify-content: space-between;
 }
 .c-item__takeout {
-  background-image: url(./../../../img/Takeout.png);
+  background-image: url(./../../../img/takeout.png);
 }
 .c-item__eatin {
-  background-image: url(./../../../img/Eatin.png);
+  background-image: url(./../../../img/eatin.png);
 }
 .c-item__dl {
   background-color: #ffffff;
@@ -551,7 +551,7 @@ $background-header: #fff7ef;
 .c-item__info {
   display: flex;
   position: relative;
-  padding: 40px 0 24px;
+  padding: 40px 0 26px;
   justify-content: center;
   gap: 25px;
 }
