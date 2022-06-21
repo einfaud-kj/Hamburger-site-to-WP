@@ -26,3 +26,6 @@ function hamburger_script() {
     wp_enqueue_script( 'script', get_theme_file_uri() . '/js/script.js', array('jquery'));
 }
 add_action('wp_enqueue_scripts', 'hamburger_script');
+
+
+    

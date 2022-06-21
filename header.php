@@ -11,14 +11,14 @@
     <?php wp_head(); ?>
 </head>
 
-<body class="l-grid"<?php body_class(); ?>>
+<body <?php body_class(); ?>>
 
     <header class="l-grid-header l-header">
         <div class="c-inner">
             <button class="c-button"><span class="c-button__menu js-button">Menu</span></button>
             <div class="l-header__content">
 
-                <h1 class="l-header__logo"><?php bloginfo('name');?>Hamburger</h1>
+                <h1 class="l-header__logo"><?php bloginfo('name');?></h1>
 
               
                <?php get_search_form();?>
