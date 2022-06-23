@@ -155,7 +155,12 @@
       font-size: 3.4rem;
     }
   }
-  &__subheading {
+}
+
+/* 　singleページ  */
+
+.c-containar {
+  & > h2 {
     font-size: 28px;
     padding-bottom: 30px;
     @include breakpoint(tablet) {
@@ -163,12 +168,7 @@
       padding-bottom: 25px;
     }
   }
-}
-
-/* 　singleページ  */
-
-.c-title {
-  &__h3 {
+  & > h3 {
     font-size: 24px;
     padding-top: 34px;
     @include breakpoint(tablet) {
@@ -176,21 +176,21 @@
       padding-top: 60px;
     }
   }
-  &__h4 {
+  & > h4 {
     font-size: 20px;
     padding-top: 30px;
     @include breakpoint(tablet) {
       padding-top: 60px;
     }
   }
-  &__h5 {
+  & > h5 {
     font-size: 20px;
     padding-top: 36px;
     @include breakpoint(tablet) {
       padding-top: 75px;
     }
   }
-  &__h6 {
+  & > h6 {
     font-size: 20px;
     padding-top: 29px;
     @include breakpoint(tablet) {

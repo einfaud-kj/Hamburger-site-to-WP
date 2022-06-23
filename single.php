@@ -3,118 +3,30 @@
     <main class="l-grid-main">
 
         <div class="p-mainvisual__image--single">
-            <h1 class="c-title__sitetitle--single">h1 チーズバーガー</h1>
-            <img src="<?php echo get_template_directory_uri(); ?>/img/single.png" alt="メインビジュアル">
-
-        </div>
-
+            <h1 class="c-title__sitetitle--single"><?php the_title(); ?></h1>
+            <?php if( has_post_thumbnail() ) {
+                the_post_thumbnail();
+            } elseif ( is_singular() ) {
+                echo '<img src="' . esc_attr( get_template_directory_uri() ) . '/img/single.png" alt="メインビジュアル">'; 
+            }
+            ?>
+            </div>
+         
         <article class="p-article">
             <div class="c-inner__single">
                 <section class="c-containar">
-                    <h2 class="c-title__subheading">見出しh2</h2>
-                    <p>Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。
-                    </p>
-                    <h3 class="c-title__h3">見出しh3</h3>
-                    <h4 class="c-title__h4">見出しh4</h4>
-                    <h5 class="c-title__h5">見出しh5</h5>
-                    <h6 class="c-title__h6">見出しh6</h6>
-                    <div class="c-item__lead">
-                        <p>Blockquote
-                            引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ
-                        </p>
-                        <p>出典元：<a>○○○○○○○○○○○○</a></p>
-                    </div>
-                </section>
-                <div>
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/single-1.png" alt="" class="c-image__common">
-                </div>
-                <section class="c-recommend__menu">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/single-1.png" alt="">
-                    <p> テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります
-                        テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります</p>
-                </section>
-                <section class="c-recommend__menu-reverse">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/single-1.png" alt="">
-                    <p> テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります
-                        テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります</p>
-                </section>
-
-                <div class="c-image__main"><img src="<?php echo get_template_directory_uri(); ?>/img/single-1.png" alt=""></div>
-                <section class="l-grid__image">
-                    <div class="c-image__sub"><img src="<?php echo get_template_directory_uri(); ?>/img/single-1.png" alt=""></div>
-                    <div class="c-image__sub"><img src="<?php echo get_template_directory_uri(); ?>/img/single-1.png" alt=""></div>
-                    <div class="c-image__sub"><img src="<?php echo get_template_directory_uri(); ?>/img/single-1.png" alt=""></div>
-                    <div class="c-image__sub"><img src="<?php echo get_template_directory_uri(); ?>/img/single-1.png" alt=""></div>
-                    <div class="c-image__sub"><img src="<?php echo get_template_directory_uri(); ?>/img/single-1.png" alt=""></div>
-                    <div class="c-image__sub"><img src="<?php echo get_template_directory_uri(); ?>/img/single-1.png" alt=""></div>
-                    <div class="c-image__sub"><img src="<?php echo get_template_directory_uri(); ?>/img/single-1.png" alt=""></div>
-                    <div class="c-image__sub"><img src="<?php echo get_template_directory_uri(); ?>/img/single-1.png" alt=""></div>
-                    <div class="c-image__sub"><img src="<?php echo get_template_directory_uri(); ?>/img/single-1.png" alt=""></div>
-                </section>
-
-                <section class="c-item__lists">
-                    <ol>
-                        <li>リストリストリスト</li>
-                        <li>リストリストリスト</li>
-                    </ol>
-                    <ol>
-                        <li>リスト2リスト2リスト2</li>
-                        <li>リスト2リスト2リスト2</li>
-                    </ol>
-
-                    <ol>
-                        <li>リストリストリスト</li>
-                        <li>リストリストリスト</li>
-                    </ol>
-                    <ul>
-                        <li>リストリストリスト</li>
-                        <li>リストリストリスト</li>
-                    </ul>
-                    <ul>
-                        <li>リスト2リスト2リスト2</li>
-                        <li>リスト2リスト2リスト2</li>
-                    </ul>
-
-                    <ul>
-                        <li>リストリストリスト</li>
-                        <li>リストリストリスト</li>
-                    </ul>
-                    <div class="c-item__tagarea">
-                        <ul>
-                            <li>＜ｈｔｍｌ＞</li>
-                            <ul>
-                                <li>＜ｈｅａｄ＞</li>
-                                <li>＜/ｈｅａｄ＞</li>
-                                <li>＜ｂｏｄｙ＞</li>
-                                <li>＜/ｂｏｄｙ＞</li>
-                            </ul>
-                            <li>＜/ｈｔｍｌ＞</li>
-                        </ul>
-                    </div>
-                </section>
-                <section class="c-item__table">
-                    <table>
-                        <tr>
-                            <td>テーブル</td>
-                            <td>テーブル</td>
-                        </tr>
-                        <tr>
-                            <td>テーブル</td>
-                            <td>テーブル</td>
-                        </tr>
-                        <tr>
-                            <td>テーブル</td>
-                            <td>テーブル</td>
-                        </tr>
-                        <tr>
-                            <td>テーブル</td>
-                            <td>テーブル</td>
-                        </tr>
-                    </table>
+                <?php $the_postid = 109;//表示したい投稿または固定ページのIDを指定します
+                      $the_content = get_post($the_postid)->post_content;
+                      $the_content = apply_filters('the_content', $the_content);
+                      echo $the_content; //取得したコンテンツを出力します
+                      ?>
+                
+               
+                     
                     <button class="c-button__single">
                         <a href="#">ボタン</a>
                     </button>
-                    <P class="c-text__single">boldboldboldboldboldboldbold</P>
+                    <P class="c-text__single">boldboldboldboldboldboldbold</P>  -->
 
                 </section>
 

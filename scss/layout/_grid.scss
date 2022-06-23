@@ -45,9 +45,9 @@
   grid-row: 3;
 }
 
-.l-grid__image {
+.wp-block-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(335px, 349px));
+  grid-template-columns: 1fr 1fr 1fr;
   @include breakpoint(tablet) {
     gap: 18px;
     margin-bottom: 60px;

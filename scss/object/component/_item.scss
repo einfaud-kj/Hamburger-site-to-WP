@@ -56,26 +56,27 @@
 
 /* singlepage */
 
-.c-item {
-  &__lead {
-    background-color: #f5f5f5;
-    margin: 30px 0;
-    padding: 30px 16px 30px 20px;
+.wp-block-quote {
+  background-color: #f5f5f5;
+  margin: 30px 0;
+  padding: 30px 16px 30px 20px;
+  @include breakpoint(tablet) {
+    margin: 60px 0;
+    padding: 50px 56px 60px 50px;
+  }
+  & > p > cite {
+    text-decoration: underline;
+    color: #4a6c9b;
+  }
+  & > p {
+    padding-bottom: 30px;
     @include breakpoint(tablet) {
-      margin: 60px 0;
-      padding: 50px 56px 60px 50px;
-    }
-    & > p > a {
-      text-decoration: underline;
-      color: #4a6c9b;
-    }
-    & > p:first-of-type {
-      padding-bottom: 30px;
-      @include breakpoint(tablet) {
-        padding-bottom: 60px;
-      }
+      padding-bottom: 60px;
     }
   }
+}
+
+.c-item {
   &__lists {
     @include breakpoint(tablet) {
       margin-left: 50px;
@@ -106,6 +107,7 @@
     }
   }
 }
+
 .c-item {
   &__tagarea {
     background-color: #f5f5f5;
