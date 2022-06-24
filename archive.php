@@ -1,10 +1,17 @@
 <?php get_header(); ?>
 
+<?php
+if ( have_posts()) {
+    while ( have_posts()) {
+        the_post();
+        ?>
+    
+
     <main class="l-grid-main">
 
         <div class="p-mainvisual__image--archive">
             <h1 class="c-title__sitetitle--archive">Menu:</h1>
-            <p class="c-title__sitetitle--archive-sub">チーズバーガー</p>
+            <p class="c-title__sitetitle--archive-sub"><?php $category = get_the_category(); $cat_name = $category[2]->cat_name; echo $cat_name; ?></p>
             <img src="<?php echo get_template_directory_uri(); ?>/img/archive-menu.png" alt="メインビジュアル">
 
         </div>
@@ -84,6 +91,12 @@
             </div>
         </article>
     </main>
+<?php
+    }
+} else {
+    echo '<p>コンテンツがありません。</p>';
+}
+    ?>
 
     <?php get_sidebar(); ?>
 

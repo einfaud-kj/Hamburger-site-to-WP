@@ -543,6 +543,9 @@ $background-header: #fff7ef;
   margin: 10px;
   opacity: 0.8;
 }
+.c-item__ul > a {
+  display: flex;
+}
 @media (min-width: 600px) {
   .c-item__ul {
     display: flex;

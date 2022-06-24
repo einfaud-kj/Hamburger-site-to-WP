@@ -27,6 +27,9 @@
     opacity: 0.8;
   }
   &__ul {
+    & > a {
+      display: flex;
+    }
     @include breakpoint(tablet) {
       display: flex;
       gap: 4.8%;
