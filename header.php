@@ -16,7 +16,7 @@
             <button class="c-button"><span class="c-button__menu js-button">Menu</span></button>
             <div class="l-header__content">
 
-                <h1 class="l-header__logo"><?php bloginfo('name');?></h1>
+                <h1 class="l-header__logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo('name');?></a></h1>
 
               
                <?php get_search_form();?>

@@ -48,6 +48,7 @@
     padding: 40px 0 26px;
     justify-content: center;
     gap: 25px;
+    list-style: none;
   }
   &__map {
     position: absolute;
@@ -125,21 +126,21 @@
       padding-left: 70px;
     }
   }
-  &__table > table {
-    width: 100%;
-    border-collapse: collapse;
-    border: solid 1px #707070;
-    & td {
-      border: solid 1px #707070;
-    }
-    & tr > td:nth-child(1) {
-      padding: 28px 38px 27px 30px;
-      @include breakpoint(tablet) {
-        padding-left: 121px;
-      }
-    }
-    & tr > td:nth-child(2) {
-      padding: 28px 106px 27px 30px;
-    }
-  }
+  // &__table > table {
+  //   width: 100%;
+  //   border-collapse: collapse;
+  //   border: solid 1px #707070;
+  //   & td {
+  //     border: solid 1px #707070;
+  //   }
+  //   & tr > td:nth-child(1) {
+  //     padding: 28px 38px 27px 30px;
+  //     @include breakpoint(tablet) {
+  //       padding-left: 121px;
+  //     }
+  //   }
+  //   & tr > td:nth-child(2) {
+  //     padding: 28px 106px 27px 30px;
+  //   }
+  // }
 }

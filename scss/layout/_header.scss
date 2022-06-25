@@ -5,8 +5,10 @@
   background-color: $color-header;
   &__logo {
     font-size: 40px;
-    color: $color-logo;
     text-align: center;
+    & > a {
+      color: $color-logo;
+    }
     @include breakpoint(pc) {
       font-size: min(4.8vw, 64px);
     }

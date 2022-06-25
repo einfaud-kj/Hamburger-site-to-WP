@@ -4,6 +4,7 @@
 .l-side {
   background-color: $color-sidebar;
   position: fixed;
+  list-style: none;
   @include breakpoint(pc) {
     position: static;
   }

@@ -51,10 +51,6 @@ a:hover img {
   transition: all 0.3s;
 }
 
-li {
-  list-style: none;
-}
-
 /*------フォントファミリー　Robot -----*/
 .l-header__logo,
 .c-title__takeout,
@@ -74,6 +70,7 @@ $background-header: #fff7ef;
 .l-footer {
   background-image: url("/wp-content/themes/hamburger_site/img/footer-bg.png");
   background-size: cover;
+  list-style: none;
 }
 
 .l-header {
@@ -81,8 +78,10 @@ $background-header: #fff7ef;
 }
 .l-header__logo {
   font-size: 40px;
-  color: #707070;
   text-align: center;
+}
+.l-header__logo > a {
+  color: #707070;
 }
 @media (min-width: 1200px) {
   .l-header__logo {
@@ -102,6 +101,7 @@ $background-header: #fff7ef;
 .l-side {
   background-color: #f2ede9;
   position: fixed;
+  list-style: none;
 }
 @media (min-width: 1200px) {
   .l-side {
@@ -565,6 +565,7 @@ $background-header: #fff7ef;
   padding: 40px 0 26px;
   justify-content: center;
   gap: 25px;
+  list-style: none;
 }
 .c-item__map {
   position: absolute;
@@ -640,25 +641,6 @@ $background-header: #fff7ef;
 .c-item__tagarea > ul > ul {
   padding-left: 70px;
 }
-.c-item__table > table {
-  width: 100%;
-  border-collapse: collapse;
-  border: solid 1px #707070;
-}
-.c-item__table > table td {
-  border: solid 1px #707070;
-}
-.c-item__table > table tr > td:nth-child(1) {
-  padding: 28px 38px 27px 30px;
-}
-@media (min-width: 600px) {
-  .c-item__table > table tr > td:nth-child(1) {
-    padding-left: 121px;
-  }
-}
-.c-item__table > table tr > td:nth-child(2) {
-  padding: 28px 106px 27px 30px;
-}
 
 .c-text__shopinfo, .c-text__history, .c-text__copy {
   color: #ffffff;
@@ -697,6 +679,10 @@ $background-header: #fff7ef;
   margin-bottom: 177px;
 }
 
+.menu {
+  list-style: none;
+}
+
 .menu-item-type-taxonomy > a {
   display: block;
   padding: 0 0 40px 12.5%;
@@ -707,6 +693,7 @@ $background-header: #fff7ef;
 .sub-menu {
   padding-left: 17.9%;
   font-size: 2rem;
+  list-style: none;
 }
 .sub-menu > li {
   padding-bottom: 22px;
@@ -833,6 +820,9 @@ $background-header: #fff7ef;
   background-color: #f2ede9;
   border: solid 1px #707070;
   border-radius: 40px;
+}
+.c-card__button > a {
+  display: block;
 }
 @media (min-width: 600px) {
   .c-card__button {

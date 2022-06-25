@@ -1,6 +1,10 @@
 @use "./../../foundation/variable" as *;
 @use "./../../foundation/mixin" as *;
 
+.menu {
+  list-style: none;
+}
+
 .menu-item-type-taxonomy > a {
   display: block;
   padding: 0 0 40px 12.5%;
@@ -11,6 +15,7 @@
 .sub-menu {
   padding-left: 17.9%;
   font-size: 2rem;
+  list-style: none;
   & > li {
     padding-bottom: 22px;
     &:last-child {

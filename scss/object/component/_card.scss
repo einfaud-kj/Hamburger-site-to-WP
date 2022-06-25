@@ -96,6 +96,9 @@
     background-color: $color-btn;
     border: solid 1px #707070;
     border-radius: 40px;
+    & > a {
+      display: block;
+    }
     @include breakpoint(tablet) {
       margin: 15% auto;
     }
