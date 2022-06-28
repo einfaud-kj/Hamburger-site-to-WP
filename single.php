@@ -19,15 +19,8 @@
                       $the_content = get_post($the_postid)->post_content;
                       $the_content = apply_filters('the_content', $the_content);
                       echo $the_content; //取得したコンテンツを出力します
-                      ?>
-                
-               
-                     
-<!--                 
-                    <button class="c-button__single">
-                        <a href="#">ボタン</a>
-                    </button>
-                    <P class="c-text__single">boldboldboldboldboldboldbold</P>  -->
+                      ?>              
+                                    
 
                 </section>
 

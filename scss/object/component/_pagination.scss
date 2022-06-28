@@ -1,56 +1,39 @@
 @use "./../../foundation/variable" as *;
 @use "./../../foundation/mixin" as *;
 
-.c-pagination {
-  color: $color-btntext;
-  font-family: "Roboto";
-  font-weight: bold;
-  &__sp > a,
-  & ul > li > a {
+.wp-pagenavi {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  & > span,
+  & > a {
     color: $color-btntext;
+    font-family: "Roboto";
+    font-weight: bold;
+    margin-left: 15px;
   }
-  &__sp {
-    display: flex;
-    justify-content: space-between;
-
-    @include breakpoint(tablet) {
-      display: none;
-    }
+  & > span {
+    padding-top: 5px;
   }
-  &__tablet {
-    display: none;
-    @include breakpoint(tablet) {
-      display: block;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  }
-  &__list {
-    display: flex;
-    align-items: center;
-    & > li:nth-child(2) {
-      background-color: #3c2b1c;
-      & > a {
-        color: white;
-      }
-    }
-  }
-
-  &__next {
-    padding-left: 18px;
-  }
-  &__number {
+  & > .page {
     border: solid;
-    margin-left: 1.8vw;
-    width: 4.8vw;
-    height: 6.5vh;
+    width: 35px;
+    height: 35px;
     text-align: center;
     line-height: 2;
-    max-width: 35px;
-    max-height: 35px;
-    @include breakpoint(pc) {
-      margin-left: 15px;
-    }
+  }
+  & > .current {
+    border: solid 1px #3c2b1c;
+    background-color: #3c2b1c;
+    color: white;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 1.5;
+  }
+  & > .previouspostslink,
+  & > .nextpostslink {
+    font-size: 25px;
+    line-height: 1.3;
   }
 }

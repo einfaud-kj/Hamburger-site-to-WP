@@ -41,15 +41,24 @@
   }
 }
 
-.c-item {
-  &__info {
-    display: flex;
-    position: relative;
-    padding: 40px 0 26px;
-    justify-content: center;
-    gap: 25px;
-    list-style: none;
+.menu-footermenu-container > ul {
+  display: flex;
+  position: relative;
+  padding: 40px 0 26px;
+  justify-content: center;
+  gap: 25px;
+  list-style: none;
+  & > li > a {
+    color: $color-white;
+    font-size: 2rem;
   }
+  & > li:last-of-type > a {
+    padding-left: 20px;
+    border-left: 2px solid white;
+  }
+}
+
+.c-item {
   &__map {
     position: absolute;
     top: 0;

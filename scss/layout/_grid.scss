@@ -1,10 +1,6 @@
 @use "./../foundation/mixin" as *;
 
-.home,
-.single,
-.archive,
-.page,
-.search {
+.customize-support {
   display: grid;
   grid-template-columns: 1fr 100%;
   grid-template-rows: 217px 1fr 150px;
