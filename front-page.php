@@ -12,7 +12,7 @@
             <div class="c-inner__article">
                 <section class="p-mainmenu">
                     <ul class="c-item__ul">
-                        <a href="takeout">
+                        <a href="http://hamburgersite.local/category/takeout/">
                         <li class="c-item__takeout u-margin__takeout">
                             <h2 class="c-title__takeout">Take Out</h2>
                             <div>
@@ -35,7 +35,7 @@
                             </div>
                         </li>
                         </a>
-                        <a href="eatin">
+                        <a href="http://hamburgersite.local/category/eatin/">
                         <li class="c-item__eatin">
                             <h2 class="c-title__eatin">Eat In</h2>
                             <div>

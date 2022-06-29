@@ -28,5 +28,11 @@ function hamburger_script() {
 }
 add_action('wp_enqueue_scripts', 'hamburger_script');
 
-
+function custom_search_filter( $query ) {
+    if ( !$query->is_admin && $query->is_search ) {
+      $query->set( 'post__not_in', array(237 ) );
+    }
+    return $query;
+  }
+  add_filter( 'pre_get_posts', 'custom_search_filter' );
     

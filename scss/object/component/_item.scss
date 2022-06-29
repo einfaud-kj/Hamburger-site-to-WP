@@ -89,37 +89,37 @@
   }
 }
 
-.c-item {
-  &__lists {
-    @include breakpoint(tablet) {
-      margin-left: 50px;
-    }
-    & > ol > li {
-      list-style: inherit;
-    }
-    & > ol,
-    & > ol > li:last-of-type,
-    & > ul,
-    & > ul > li:last-of-type {
-      margin-bottom: 20px;
-    }
-    & > ul > li:last-of-type {
-      @include breakpoint(tablet) {
-        margin-bottom: 60px;
-      }
-    }
-    & > ol {
-      margin-left: 20px;
-    }
-    & > ol:last-of-type {
-      margin-bottom: 60px;
-    }
-    & > ol:nth-of-type(2),
-    & > ul:nth-of-type(2) {
-      padding-left: 18px;
-    }
-  }
-}
+// .c-item {
+//   &__lists {
+//     @include breakpoint(tablet) {
+//       margin-left: 50px;
+//     }
+//     & > ol > li {
+//       list-style: inherit;
+//     }
+//     & > ol,
+//     & > ol > li:last-of-type,
+//     & > ul,
+//     & > ul > li:last-of-type {
+//       margin-bottom: 20px;
+//     }
+//     & > ul > li:last-of-type {
+//       @include breakpoint(tablet) {
+//         margin-bottom: 60px;
+//       }
+//     }
+//     & > ol {
+//       margin-left: 20px;
+//     }
+//     & > ol:last-of-type {
+//       margin-bottom: 60px;
+//     }
+//     & > ol:nth-of-type(2),
+//     & > ul:nth-of-type(2) {
+//       padding-left: 18px;
+//     }
+//   }
+// }
 
 .c-item {
   &__tagarea {
@@ -135,21 +135,10 @@
       padding-left: 70px;
     }
   }
-  // &__table > table {
-  //   width: 100%;
-  //   border-collapse: collapse;
-  //   border: solid 1px #707070;
-  //   & td {
-  //     border: solid 1px #707070;
-  //   }
-  //   & tr > td:nth-child(1) {
-  //     padding: 28px 38px 27px 30px;
-  //     @include breakpoint(tablet) {
-  //       padding-left: 121px;
-  //     }
-  //   }
-  //   & tr > td:nth-child(2) {
-  //     padding: 28px 106px 27px 30px;
-  //   }
-  // }
+}
+.wp-block-table > table {
+  border: solid 1px #707070;
+  & > tbody > tr > td {
+    border: solid 1px #707070;
+  }
 }

@@ -36,7 +36,7 @@
                             <p class="c-card__text">
                                 テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
 
-                            <button class="c-card__button"><a href="<?php the_permalink(); ?>">詳しく見る</a></button>
+                            <a class="c-card__button" href="<?php the_permalink(); ?>">詳しく見る</a>
 
                         </figcaption>
                     </figure>
