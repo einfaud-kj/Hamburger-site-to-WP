@@ -10,6 +10,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+<?php wp_body_open(); ?>
 
     <header class="l-grid-header l-header">
         <div class="c-inner">

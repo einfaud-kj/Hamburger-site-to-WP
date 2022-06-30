@@ -10,7 +10,7 @@
 
         <div class="p-mainvisual__image--page">
             <h1 class="c-title__sitetitle--page"><?php the_title(); ?></h1>
-            <img src="<?php echo get_template_directory_uri(); ?>/img/page.png" alt="メインビジュアル">
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/page.png" alt="メインビジュアル">
 
         </div>
 
@@ -33,30 +33,30 @@
                     </div>
                 </section>
                 <div>
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/single-1.png" alt="" class="c-image__common">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-1.png" alt="" class="c-image__common">
                 </div>
                 <section class="c-recommend__menu">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/single-1.png" alt="">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-1.png" alt="">
                     <p> テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります
                         テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります</p>
                 </section>
                 <section class="c-recommend__menu-reverse">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/single-1.png" alt="">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-1.png" alt="">
                     <p> テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります
                         テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります</p>
                 </section>
 
-                <div class="c-image__main"><img src="<?php echo get_template_directory_uri(); ?>/img/single-1.png" alt=""></div>
+                <div class="c-image__main"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-1.png" alt=""></div>
                 <section class="l-grid__image">
-                    <div class="c-image__sub"><img src="<?php echo get_template_directory_uri(); ?>/img/single-1.png" alt=""></div>
-                    <div class="c-image__sub"><img src="<?php echo get_template_directory_uri(); ?>/img/single-1.png" alt=""></div>
-                    <div class="c-image__sub"><img src="<?php echo get_template_directory_uri(); ?>/img/single-1.png" alt=""></div>
-                    <div class="c-image__sub"><img src="<?php echo get_template_directory_uri(); ?>/img/single-1.png" alt=""></div>
-                    <div class="c-image__sub"><img src="<?php echo get_template_directory_uri(); ?>/img/single-1.png" alt=""></div>
-                    <div class="c-image__sub"><img src="<?php echo get_template_directory_uri(); ?>/img/single-1.png" alt=""></div>
-                    <div class="c-image__sub"><img src="<?php echo get_template_directory_uri(); ?>/img/single-1.png" alt=""></div>
-                    <div class="c-image__sub"><img src="<?php echo get_template_directory_uri(); ?>/img/single-1.png" alt=""></div>
-                    <div class="c-image__sub"><img src="<?php echo get_template_directory_uri(); ?>/img/single-1.png" alt=""></div>
+                    <div class="c-image__sub"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-1.png" alt=""></div>
+                    <div class="c-image__sub"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-1.png" alt=""></div>
+                    <div class="c-image__sub"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-1.png" alt=""></div>
+                    <div class="c-image__sub"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-1.png" alt=""></div>
+                    <div class="c-image__sub"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-1.png" alt=""></div>
+                    <div class="c-image__sub"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-1.png" alt=""></div>
+                    <div class="c-image__sub"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-1.png" alt=""></div>
+                    <div class="c-image__sub"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-1.png" alt=""></div>
+                    <div class="c-image__sub"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/single-1.png" alt=""></div>
                 </section>
 
                 <section class="c-item__lists">

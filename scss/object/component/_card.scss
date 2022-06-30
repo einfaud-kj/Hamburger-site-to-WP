@@ -98,7 +98,7 @@
     background-color: $color-btn;
     border: solid 1px #707070;
     border-radius: 40px;
-    padding: 25px 50px 25px 105px;
+    padding: 7px 40px;
 
     @include breakpoint(tablet) {
       margin: 15% auto;
@@ -107,6 +107,7 @@
       margin: 60px auto;
       width: 292px;
       height: 76px;
+      padding: 25px 50px 25px 105px;
     }
   }
 }

@@ -808,7 +808,7 @@ ul:nth-of-type(2) {
   background-color: #f2ede9;
   border: solid 1px #707070;
   border-radius: 40px;
-  padding: 25px 50px 25px 105px;
+  padding: 7px 40px;
 }
 @media (min-width: 600px) {
   .c-card__button {
@@ -820,6 +820,7 @@ ul:nth-of-type(2) {
     margin: 60px auto;
     width: 292px;
     height: 76px;
+    padding: 25px 50px 25px 105px;
   }
 }
 
@@ -942,7 +943,7 @@ ul:nth-of-type(2) {
   margin-right: 13px;
   padding-left: 10px;
   font-size: 20px;
-  font-family: FontAwesome;
+  font-family: "FontAwesome 5 Free";
   font-style: normal;
   font-weight: normal;
   line-height: 1;

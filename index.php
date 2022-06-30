@@ -4,7 +4,7 @@
 
         <div class="p-mainvisual__image">
             <h2 class="c-title__sitetitle">ダミーサイト</h2>
-            <img src="<?php echo get_template_directory_uri(); ?>/img/mainvisual.png" alt="メインビジュアル">
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/mainvisual.png" alt="メインビジュアル">
 
         </div>
 
@@ -68,7 +68,7 @@
                 </p>
 
                 <div>
-                    <img class="c-item__map" src="<?php echo get_template_directory_uri(); ?>/img/map.png" alt="goglemap">
+                    <img class="c-item__map" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/map.png" alt="goglemap">
 
                 </div>
             </section>
