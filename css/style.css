@@ -68,7 +68,7 @@ $background-header: #fff7ef;
 何に使用する色かをわかりやすくするために
 */
 .l-footer {
-  background-image: url("/wp-content/themes/hamburger_site/img/footer-bg.png");
+  background-image: url("../img/footer-bg.png");
   background-size: cover;
   list-style: none;
 }
@@ -533,10 +533,10 @@ ul:nth-of-type(2) {
   justify-content: space-between;
 }
 .c-item__takeout {
-  background-image: url("/wp-content/themes/hamburger_site/img/takeout.png");
+  background-image: url("../img/takeout.png");
 }
 .c-item__eatin {
-  background-image: url("/wp-content/themes/hamburger_site/img/eatin.png");
+  background-image: url("../img/eatin.png");
 }
 .c-item__dl {
   background-color: #ffffff;
