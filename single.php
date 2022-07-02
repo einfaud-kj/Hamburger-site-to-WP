@@ -17,12 +17,7 @@
                 <section class="c-containar">
                     <?php the_content();?>
                    
-                <!-- <?php $the_postid = 237;//表示したい投稿または固定ページのIDを指定します
-                      $the_content = get_post($the_postid)->post_content;
-                      $the_content = apply_filters('the_content', $the_content);
-                      echo $the_content; //取得したコンテンツを出力します
-                      ?>               -->
-                                    
+                                                 
 
                 </section>
 

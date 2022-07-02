@@ -573,6 +573,9 @@ $background-header: #fff7ef;
     gap: 5.2%;
   }
 }
+.c-item__ul > li {
+  list-style: none;
+}
 
 .menu-footermenu-container > ul {
   display: flex;

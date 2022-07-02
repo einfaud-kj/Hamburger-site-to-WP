@@ -38,6 +38,9 @@
     @include breakpoint(pc) {
       gap: 5.2%;
     }
+    & > li {
+      list-style: none;
+    }
   }
 }
 

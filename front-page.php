@@ -11,9 +11,9 @@
         <article class="p-article">
             <div class="c-inner__article">
                 <section class="p-mainmenu">
-                    <ul class="c-item__ul">
-                        <a href="<?php echo wp_make_link_relative("http://hamburgersite.local/category/takeout/") ; ?>">
-                        <li class="c-item__takeout u-margin__takeout">
+                    <ul class="c-item__ul">                       
+                        <li>
+                        <a  class="c-item__takeout u-margin__takeout" href="/category/takeout/">
                             <h2 class="c-title__takeout">Take Out</h2>
                             <div>
                                 <dl class="c-item__dl">
@@ -33,10 +33,12 @@
                                     </dd>
                                 </dl>
                             </div>
+                            </a>
                         </li>
-                        </a>
-                        <a href="<?php echo wp_make_link_relative("http://hamburgersite.local/category/eatin/") ; ?>">
-                        <li class="c-item__eatin">
+                        
+                        
+                        <li>
+                        <a  class="c-item__eatin u-margin__eatin" href="/category/eatin/">
                             <h2 class="c-title__eatin">Eat In</h2>
                             <div>
                                 <dl class="c-item__dl">
@@ -56,8 +58,9 @@
                                     </dd>
                                 </dl>
                             </div>
+                            </a>
                         </li>
-                        </a>
+                       
                     </ul>
             </div>
             </section>

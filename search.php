@@ -5,7 +5,7 @@
 
         <div class="p-mainvisual__image--archive">
             <h1 class="c-title__sitetitle--archive-search">Search:</h1>
-            <p class="c-title__sitetitle--archive-search-sub"><?php $category = get_the_category(); $cat_name = $category[0]->cat_name; echo $cat_name; ?></p>
+            <p class="c-title__sitetitle--archive-search-sub"><?php echo get_search_query(); ?></p>
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/archive-menu.png" alt="メインビジュアル">
 
         </div>
