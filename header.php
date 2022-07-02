@@ -19,7 +19,7 @@
 
                 <h1 class="l-header__logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo('name');?></a></h1>
                 <div class="p-search-form__div">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>./img/searchicon.png" class="p-search-form__icon">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/searchicon.png" class="p-search-form__icon">
                <?php get_search_form();?>
 </div>
 
