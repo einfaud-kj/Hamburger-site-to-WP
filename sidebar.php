@@ -5,5 +5,7 @@
             <span class="c-button__sidebar js-button__sidebar"></span>
            
             <?php wp_nav_menu(array('theme_location' =>'categorymenu')); ?>
-               
+            
+        </div>
+        <div class="p-sidebar__overlay"></div>       
     </article>

@@ -30,7 +30,7 @@
 }
 
 /*メニューが開いた後のカバー背景*/
-.l-sidebar__overlay {
+.p-sidebar__overlay {
   &.is-open {
     position: fixed;
     width: 100%;

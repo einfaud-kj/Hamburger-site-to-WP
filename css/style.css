@@ -1113,7 +1113,7 @@ $background-header: #fff7ef;
 }
 
 /*メニューが開いた後のカバー背景*/
-.l-sidebar__overlay.is-open {
+.p-sidebar__overlay.is-open {
   position: fixed;
   width: 100%;
   height: 100%;
