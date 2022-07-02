@@ -7,7 +7,7 @@
 
         <div class="p-mainvisual__image--archive">
             <h1 class="c-title__sitetitle--archive">Menu:</h1>
-            <p class="c-title__sitetitle--archive-sub"><?php $category = get_the_category(); $cat_name = $category[2]->cat_name; echo $cat_name; ?></p>
+            <p class="c-title__sitetitle--archive-sub"><?php single_cat_title(); ?></p>
             <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/archive-menu.png" alt="メインビジュアル">
 
         </div>

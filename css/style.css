@@ -13,6 +13,15 @@ html {
   scroll-behavior: smooth;
 }
 
+#wpadminbar {
+  margin-top: -46px !important;
+}
+@media (min-width: 600px) {
+  #wpadminbar {
+    margin-top: 0 !important;
+  }
+}
+
 body {
   color: #333;
   font-size: 1.6rem;
@@ -941,9 +950,8 @@ ul:nth-of-type(2) {
   border: 1px solid #707070;
   border-radius: 12px;
   margin-right: 13px;
-  padding-left: 10px;
+  padding-left: 40px;
   font-size: 20px;
-  font-family: "FontAwesome 5 Free";
   font-style: normal;
   font-weight: normal;
   line-height: 1;
@@ -962,6 +970,24 @@ ul:nth-of-type(2) {
   border-radius: 12px;
   color: #707070;
   font-weight: bold;
+}
+
+.p-search-form__div {
+  position: relative;
+  margin: 15px auto;
+  max-width: 545px;
+}
+@media (min-width: 1200px) {
+  .p-search-form__div {
+    margin: 0;
+  }
+}
+.p-search-form__icon {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 12px;
+  left: 10px;
 }
 
 .p-mainvisual__image {

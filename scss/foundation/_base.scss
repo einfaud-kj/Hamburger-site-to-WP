@@ -1,3 +1,5 @@
+@use "./mixin" as *;
+
 *,
 *:before,
 *:after {
@@ -12,6 +14,13 @@ html {
   font-size: 62.5%;
   line-height: 1.6;
   scroll-behavior: smooth;
+}
+
+#wpadminbar {
+  margin-top: -46px !important;
+  @include breakpoint(tablet) {
+    margin-top: 0 !important;
+  }
 }
 
 body {

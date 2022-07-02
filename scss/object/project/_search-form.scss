@@ -23,9 +23,8 @@
     border: 1px solid #707070;
     border-radius: 12px;
     margin-right: 13px;
-    padding-left: 10px;
+    padding-left: 40px;
     font-size: 20px;
-    font-family: "FontAwesome\ 5 Free";
     font-style: normal;
     font-weight: normal;
     line-height: 1;
@@ -44,5 +43,22 @@
     border-radius: 12px;
     color: $color-btntext;
     font-weight: bold;
+  }
+}
+.p-search-form {
+  &__div {
+    position: relative;
+    margin: 15px auto;
+    max-width: 545px;
+    @include breakpoint(pc) {
+      margin: 0;
+    }
+  }
+  &__icon {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 12px;
+    left: 10px;
   }
 }
