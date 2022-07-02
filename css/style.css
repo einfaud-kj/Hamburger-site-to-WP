@@ -118,7 +118,7 @@ $background-header: #fff7ef;
   }
 }
 
-.customize-support {
+.l-grid {
   display: grid;
   grid-template-columns: 1fr 100%;
   grid-template-rows: 217px 1fr 150px;
@@ -126,7 +126,7 @@ $background-header: #fff7ef;
   grid-row-gap: 0px;
 }
 @media (min-width: 1200px) {
-  .customize-support {
+  .l-grid {
     grid-template-columns: 1fr 19.1%;
   }
 }

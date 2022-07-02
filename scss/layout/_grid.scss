@@ -1,6 +1,6 @@
 @use "./../foundation/mixin" as *;
 
-.customize-support {
+.l-grid {
   display: grid;
   grid-template-columns: 1fr 100%;
   grid-template-rows: 217px 1fr 150px;
