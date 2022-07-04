@@ -111,6 +111,7 @@ $background-header: #fff7ef;
   background-color: #f2ede9;
   position: fixed;
   list-style: none;
+  z-index: 9998;
 }
 @media (min-width: 1200px) {
   .l-side {
@@ -575,7 +576,11 @@ $background-header: #fff7ef;
 }
 .c-item__ul > li {
   list-style: none;
-  width: 50%;
+}
+@media (min-width: 600px) {
+  .c-item__ul > li {
+    width: 50%;
+  }
 }
 
 .menu-footermenu-container > ul {

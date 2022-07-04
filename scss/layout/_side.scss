@@ -5,6 +5,7 @@
   background-color: $color-sidebar;
   position: fixed;
   list-style: none;
+  z-index: 9998;
   @include breakpoint(pc) {
     position: static;
   }
